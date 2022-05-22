@@ -1,0 +1,27 @@
+.page-nav__logo {
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+
+
+    @media screen and (min-width: 768px){
+        padding-top: 26px;
+        padding-bottom: 26px;
+        margin-right: 88px;
+    }
+ }
+ 
+ .page-nav__logo-web {
+     
+    color: $accent-color;
+}
+.page-nav__logo-studio  {
+    color: $third-text-color;
+}
