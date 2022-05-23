@@ -12,6 +12,15 @@
     
 
     background-color: $secondary-bg-color;
+
+
+    @media screen and (min-width: 1200px){
+        padding-bottom: 200px;
+        padding-top: 200px;
+        max-width: 1600px;
+        height: 600px;
+        
+    }
    
    
 }
@@ -86,6 +95,4 @@
     cursor: pointer;
  
 }
-.hero-btn {
-    // text-align: center;
-}
+

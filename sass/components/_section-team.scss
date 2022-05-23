@@ -9,6 +9,12 @@
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
+
+    @media screen and (min-width: 1200px){
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
 }
 .works__group {
     display: flex;
@@ -50,16 +56,19 @@
     
     background-color: $third-bg-color;
 
-    @media screen and (min-width: 768px){
-        max-width: 768px;
+
+    @media screen and (min-width: 1200px){
+        
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 
   
 }
 .section-team__list {
-    // display: flex;
+    
     justify-content: space-between;
-    // align-items: center;
+
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -90,6 +99,10 @@
 
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px){
+        flex-basis: calc((100% - 90px) / 4);
     }
 
 }

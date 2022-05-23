@@ -36,7 +36,7 @@
 
 }
 .page-nav-main__link {
-    display: block;
+    display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -147,7 +147,7 @@
 }
 
 .container-menu {
-    z-index: 9999;
+    // z-index: 9999;
     
     background-color: $primary-bg-color;
    

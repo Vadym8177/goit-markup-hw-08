@@ -5,6 +5,10 @@
     @media screen and (max-width: 767px){
         max-width: 480px;
     }
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 .section-portfolio__main-title {
     visibility: hidden;
@@ -17,6 +21,10 @@
     
     @media screen and (max-width:767px) {
         max-width: 480px;   
+    }
+    @media screen and (min-width: 1200px){
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 }
 .section-portfolio__item {
@@ -84,6 +92,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media screen and (min-width: 1200px){
+        justify-content: space-between;
+    }
     
 }
 .portfolio-data__link {

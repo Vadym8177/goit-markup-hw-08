@@ -1,5 +1,5 @@
 .section-features {
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
         display: none;
     }
 }
@@ -17,20 +17,20 @@
     text-align: center;
 }
 .section-features__list {
-    // display: flex;
+    display: flex;
     justify-content: space-between;
     padding-bottom: 94px;
 }
 .section-features__item {
-    // display: flex;
+    display: flex;
     position: relative;
     
 }
 .section-feature__description {
-    // display: flex;
+    display: flex;
     position: absolute;
     bottom: 0;
-    // width: 100%;
+    width: 100%;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
 
