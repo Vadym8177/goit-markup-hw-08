@@ -1019,7 +1019,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-clients__items {
-    width: 210px;
+    width: 226px;
   }
 }
 
@@ -1045,6 +1045,12 @@ img {
 .section-clients__link:hover, .section-clients__link:focus {
   fill: #2196F3;
   border: 1px solid #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .section-clients__link {
+    width: 226px;
+  }
 }
 
 .section-clients__list {
@@ -1082,6 +1088,12 @@ img {
   padding-bottom: 60px;
   margin-bottom: 0;
   background-color: #2F303A;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-info {
+    display: inline-block;
+  }
 }
 
 .footer-info__list {
@@ -1131,6 +1143,15 @@ img {
 .footer-connect {
   margin-bottom: 60px;
   margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-connect {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .footer-connect__title {

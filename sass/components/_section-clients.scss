@@ -17,7 +17,7 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        width: 210px;
+        width: 226px;
     }
 
 }
@@ -41,6 +41,11 @@
     border: 1px solid $accent-color;
     }
 
+
+    @media screen and (min-width: 768px){
+        width: 226px;
+        
+    }
 
 }
 .section-clients__list {
