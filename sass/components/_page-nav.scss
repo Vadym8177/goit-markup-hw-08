@@ -37,8 +37,7 @@
 }
 .page-nav-main__link {
     display: inline-block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     
     color: $primary-text-color;
     font-weight: 500;
@@ -53,6 +52,8 @@
 
 
     @media screen and (min-width: 768px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14px;
@@ -75,21 +76,17 @@
 
 }
 .page-nav-main__link.current {
-    &::after {
-        content: '';
-        width: 100%;
-        height: 4px;
-        background-color: $accent-color;
-        border-radius: 2px;
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-
-    }
+   
     @media screen and (min-width: 768px) {
         &::after {
             content: '';
             bottom: -7px;
+            width: 100%;
+            height: 4px;
+            background-color: $accent-color;
+            border-radius: 2px;
+            position: absolute;
+            left: 0;
         }
         
     }
@@ -100,21 +97,18 @@
     position: relative;
 }
 .page-nav-main__link.current-second {
-    &::after {
-        content: '';
-        width: 100%;
-        height: 4px;
-        background-color: $accent-color;
-        border-radius: 2px;
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-    }
+
 
     @media screen and (min-width: 768px) {
         &::after {
             content: '';
             bottom: -7px;
+            width: 100%;
+            height: 4px;
+            background-color: $accent-color;
+            border-radius: 2px;
+            position: absolute;
+            left: 0;
         }
         
     }
@@ -128,6 +122,11 @@
     padding: 0;
     border: 0;
     background-color: transparent;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
 
 
     @media screen and (min-width: 768px) {
