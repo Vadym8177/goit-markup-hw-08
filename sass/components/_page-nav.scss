@@ -88,6 +88,12 @@
             position: absolute;
             left: 0;
         }
+        @media screen and (min-width: 1200px){
+            &::after {
+                content: '';
+                bottom: -9px;
+            }
+        }
         
     }
     
@@ -109,6 +115,13 @@
             border-radius: 2px;
             position: absolute;
             left: 0;
+        }
+
+        @media screen and (min-width: 1200px){
+            &::after {
+                content: '';
+                bottom: -9px;
+            }
         }
         
     }
@@ -146,7 +159,7 @@
 }
 
 .container-menu {
-    // z-index: 9999;
+    
     
     background-color: $primary-bg-color;
    
