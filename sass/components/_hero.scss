@@ -1,140 +1,130 @@
 .hero {
-    padding-bottom: 118px;
-    padding-top: 118px;
-    min-width: 320px;
-    max-width: 1600px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $secondary-bg-color;
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/heromobile.jpg");
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-    
+  padding-bottom: 118px;
+  padding-top: 118px;
+  min-width: 320px;
+  max-width: 1600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $secondary-bg-color;
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('..//..//images/heromobile.jpg');
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-    
-
-    @media screen and (min-width: 1200px){
-        padding-bottom: 200px;
-        padding-top: 200px;
-        height: 600px;
-    }
-
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    height: 600px;
+  }
 }
 
-    @media (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('..//..//images/heromobile2x.jpg');
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('..//..//images/herotablet.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/heromobile2x.jpg"); 
-        }
+    .hero {
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('..//..//images/herotablet2x.jpg');
     }
+  }
+}
 
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('..//..//images/herodesktop.jpg');
+  }
 
-    @media screen and (min-width: 577px) and (max-width:768px){
-        .hero {
-            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/herotablet.jpg"); 
-        }
-
-        @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/herotablet2x.jpg"); 
-        }
+    .hero {
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('..//..//images/herodesktop2x.jpg');
     }
-    }
-
-    @media screen and (min-width: 769px){
-        .hero {
-            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/herodesktop.jpg"); 
-        }
-
-        @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/herodesktop2x.jpg"); 
-        }
-    }
-    }
+  }
+}
 
 .hero-title {
-    margin: 0 auto 30px;
-    max-width: 360px;
-    text-align: center;
-    
-   
-    color: $secondary-text-color;
+  margin: 0 auto 30px;
+  max-width: 360px;
+  text-align: center;
+
+  color: $secondary-text-color;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
-    @media screen and (min-width: 1200px){
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        max-width: 696px;
-    }
-    
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 .hero__button {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 200px;
-    height: 50px;
-    border: transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
+  color: $secondary-text-color;
+  background-color: $button-bg-color;
 
-    
-    color: $secondary-text-color;
-    background-color: $button-bg-color;
-
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    cursor: pointer;
- 
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 }
-
 
 .hero__button {
-    
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 200px;
-    height: 50px;
-    border: transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
+  color: $secondary-text-color;
+  background-color: $button-bg-color;
 
-    
-    color: $secondary-text-color;
-    background-color: $button-bg-color;
-
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    cursor: pointer;
- 
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 }
-
+  
