@@ -51,6 +51,11 @@
         outline: none;
         border: 1px solid $accent-color;
     }
+
+    @media screen and (min-width: 1200px){
+        width: 448px;
+        
+    }
 }
 
 .form-main-group__title {

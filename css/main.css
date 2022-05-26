@@ -243,8 +243,8 @@ img {
 @media screen and (max-width: 767px) {
   .container-menu {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    margin-top: 700px;
     width: 100%;
     left: 0;
     padding-bottom: 60px;
@@ -556,9 +556,9 @@ img {
   bottom: 0;
   right: 0;
   padding: 15px;
+  z-index: 99999;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  overflow-y: scroll;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -595,7 +595,6 @@ img {
   .modal {
     width: 450px;
     height: 609px;
-    margin-top: 93px;
   }
 }
 
@@ -603,7 +602,6 @@ img {
   .modal {
     width: 450px;
     height: 609px;
-    margin-top: 208px;
   }
 }
 
@@ -669,6 +667,12 @@ img {
 .form-group__input:focus {
   outline: none;
   border: 1px solid #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-group__input {
+    width: 448px;
+  }
 }
 
 .form-main-group__title {
