@@ -433,6 +433,12 @@ img {
   margin-left: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .page-nav-contacts__social {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .page-nav-contacts__social-items:not(:last-child) {
     padding-right: 10px;
