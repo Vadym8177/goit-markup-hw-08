@@ -166,12 +166,14 @@
     @media screen and (max-width: 767px) { 
         display: none;
         position: fixed;
-        margin-top: 700px;
-        // top: 100%;
+        top: 48px;
+        
         width: 100%;
+        height: auto;
+        
         left: 0;
-        padding-bottom: 60px;
-        padding-top: 60px;
+        padding-bottom: 48px;
+        padding-top: 48px;
         &.is-open {
             display: block;
         }
